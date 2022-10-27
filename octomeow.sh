@@ -1,7 +1,7 @@
 #!/bin/bash
 ARMBIAN_REPO="https://github.com/armbian/build"
 ARMBIAN_TAG="remotes/origin/v22.02"
-#OCTOPI_REPO="https://github.com/guysoft/OctoPi" #the normal one
+# OCTOPI_REPO="https://github.com/guysoft/OctoPi" #the normal one
 OCTOPI_REPO="https://github.com/denpat/Octoprint138WASP.git" #the cooler one from DenPat
 MJPGSTREAMER_REPO="https://github.com/jacksonliam/mjpg-streamer.git"
 OCTOPI_TAG="0.18.0"
@@ -15,7 +15,7 @@ BOS=$(uname -s)
 
 
 set -e 
-echo "Octowasp script => $1 [runining on $BOS]"
+echo "OctoMeow script => $1 [runining on $BOS]"
 
 if [ $# -eq 0 ] ; then
    echo "Usage:"
@@ -41,7 +41,7 @@ SEDI="sed -i bup -e"
 function clean_vm() {
     if [ -d $VAGRANT_DIR ]; then
         pushd $VAGRANT_DIR
-        echo "Cleaning virtual machine...."
+        echo "Cleaning the virtual machine...."
         vagrant destroy
         popd
     else
@@ -54,7 +54,7 @@ function build_start() {
     local build_mode=$2
     local enable_cache=$3
 
-    echo "Setting up build environment for $board..."
+    echo "Setting up build environment for the $board..."
     cp -v -R -p opi_source/src/modules/octopi/filesystem $OV_DIR
     cp -v -p    boards/manifest  $OV_DIR
     cp -v -p    boards/common.sh $OV_DIR
@@ -133,7 +133,7 @@ EOF
         ./compile.sh docker dbuild
         popd
     else
-        echo "Native build not ready yet!"
+        echo "Sorry Native Build is not ready yet!"
         exit 1
     fi
 }
@@ -148,6 +148,7 @@ if [ "$1" == "box" ] ; then
     fi
     echo "Setting up $VAGRANT box...."
     vagrant plugin install vagrant-disksize
+    echo "installing vagrant-disksize and not vagrant-dicksize"
     vagrant box add $VAGRANT_BOX
     vagrant box update
     exit $?
