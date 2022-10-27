@@ -1,0 +1,15 @@
+command lines 
+./execute_me_first	    : intall the programes needed and make the files executable
+
+./build_all.sh
+./build_M2Z.sh
+./build_M2U.sh
+
+./octomeow box              : install ubuntu box for builing"
+./octomeow drop             : destroy build virtual manchine"
+./octomeow clean            : delete all build resources (assets,box,vm)"
+./octomeow assets           : download build assets"
+./octomeow build <board>    : Build image for board <board> uisng vagrant"
+./octomeow dbuild <board>   : Build image for board <board> using docker"
+./octomeow native <board>   : Build image in native supported Ubuntu"
+./octomeow release <version>: Create a git release (use for maintenance)"
