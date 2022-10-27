@@ -2,6 +2,7 @@
 <p align="center">
   <img src="media/octomeow.png">
 </p>
+*biblicaly acurate depiction of me trying to make it work*
 
 based on :
 https://github.com/denpat/Octoprint138WASP
@@ -77,17 +78,9 @@ Adding boards to the project requires few steps:
 
 Building the distribution requires:
 
-- Linux or MacOs
-- Vagrant + Virtualbox
-- +50Gb of free disk space.
-- +4Gb RAM
-
-```bash
-$ git clone <this repository>
-$ cd optocitrico
-$ ./optocitrico.sh box
-$ ./optocitrico.sh assets
-$ ./optocitrico.sh build <board_name>
+- talent
+- time 
+- and i don't know how to make it work
 ```
 
 Build process is slow and verbose it could take up to 3h depending on your hardware. Be patient.  
@@ -97,12 +90,12 @@ Building process could use a lot of space of your disk. To free this space after
 
 ## Tested boards
 
-- Banana PI M2 Zero
+- yes
 
 WIP:
 
 - Banana PI M2 Ultra
-
+- Banana PI M2 Zero
 
 ## Contributing
 If you like this project and you want support it please consider:
@@ -111,12 +104,3 @@ If you like this project and you want support it please consider:
 - Do all my work so i can go on week-ends
 - Test bords and provide feeback.
 - Make a donation to Armbian, Octoprint & OctoPi projects.
-- Make a donation to this project [here](https://www.buymeacoffee.com/boros): This will enable to buy boards for testing and to pay cloud infrastructure to improve the compilation process.
-<p align="center">
-<a href="https://www.buymeacoffee.com/boros" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-white.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-</p>
-
-or
-
-xrm:
-889Eewy4ZmKanvWEbVAQKSH9imihLN6iXBz2kLR5Eb1mP2nv6fnPCevKk5qqmGGFsw7ao6HkmDyom7H3hk1vCFMLUoFWkaF
