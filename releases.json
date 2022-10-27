@@ -1,0 +1,81 @@
+[
+    {
+        "tag":"v20.08-2",
+        "name":"Update to armbian stable v20.08 (Caple)",
+        "body":[
+            "Bump to new stable armbian [version 20.08](https://github.com/armbian/build/releases/tag/v20.08)\n",
+            "\n## New boards:",
+            " - Added orange PI Pc",
+            "\n\n **Notice**: This will is the last release using python2 next releases will migrate to python3",
+            "\n## Builder:",
+            " - Improved compilation VM speed",
+            " - Parametric virtualenv (preparation for python3)",
+            " - Fix citrico-config to hide kilipper if not installed",
+            " - Automation of releases"
+        ],
+        "prerelease":true
+    },
+    {
+        "tag":"v20.11-1",
+        "name":"Update to armbian stable v20.11",
+        "body":[
+            "Bump to stable armbian v20.11\n",
+            "Runtime migrated to python3\n",
+            "**Note:**New HSL streaming of octoPi is not incluided as octoPi 0.18 is still no stable\n\n",
+            "\n## New boards:\n",
+            " - Added orange PI PC+\n",
+            " - Added BananaPI M2\n",
+            " - Added Rock64\n",
+            "\n\n",
+            "## Builder:\n",
+            " - Vagrant build uses now ubuntu focal 64 box.",
+            " - Updated base packages including libatlas3-base for numpy wheel usage",
+            " - Added piwheels source to pip to speed up builds"
+        ],
+        "prerelease":true
+    },
+    {
+        "tag":"v21.02-1",
+        "name":"Update to octopi v0.18",
+        "body":[
+            "Updated stable armbian v21.02\n",
+            "Bump to new version of octopi 0.18: Improved camera support & bugfix\n",
+            "Added v4linux-utils for camera troubleshouting\n",
+            "Other minor changes\n",
+            "\n\n",
+            "## New boards:\n",
+            " - Added orange PI Lite\n",
+            "\n\n This release do not include ROCK64"
+        ],
+        "prerelease":true
+    },
+    {
+        "tag":"v21.05-1",
+        "name":"Update to armbian 21.05",
+        "body":[
+            "Updated stable armbian v21.05\n",
+            "fixed reboot with systemctl for shutdow #13\n",
+            "other minor changes",
+            "\n\n",
+            "## New boards:\n\n",
+            " - Added orange PI One Plus - WIP\n",
+            "\n\n This release does not include ROCK64 image",
+            "\n\n"
+        ],
+        "prerelease":false
+    },
+    {
+        "tag":"v22-02-1",
+        "name":"Update to bullseye and armbian 22.02",
+        "body": [
+            "Distro update current debian (bullseye)",
+            "Updated to stable amrbia v22.05",
+            "\n\n",
+            "## New boards:\n\n",
+            " -Added Orange Pi Zero 2 - edge kernel branch\n",
+            "\n\n"
+        ],
+        "prerelease":false
+    }
+
+]
