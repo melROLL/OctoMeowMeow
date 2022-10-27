@@ -18,7 +18,7 @@ wait
 wait
 sudo apt-get install virtualbox -y
 wait
-sudo apt install vagrant git espeak -y
+sudo apt install vagrant git vlc espeak -y
 wait
 sudo apt upgrade -y
 wait
