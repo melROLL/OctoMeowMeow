@@ -51,15 +51,15 @@ sudo apt-get install python3-venv -y
 wait
 sudo apt upgrade -y
 wait
-echo "==================================="
-echo "==================================="
-echo "everything is updated and installed"
-echo "==================================="
-echo "==================================="
+echo "======================================="
+echo "======================================="
+echo "= everything is updated and installed ="
+echo "======================================="
+echo "======================================="
 #openocd
 echo "==================================="
 echo "==================================="
-echo "=      installing openocd         ="
+echo "=       installing openocd        ="
 echo "==================================="
 echo "==================================="
 cd
@@ -82,12 +82,12 @@ echo "==================================="
 #GPIO
 echo "==================================="
 echo "==================================="
-echo "installing GPIO libraries"
+echo "=    installing GPIO libraries    ="
 echo "==================================="
 echo "==================================="
 cd
 echo "==================================="
-echo "installing RPi.GPIO_BP"
+echo "=     installing RPi.GPIO_BP      ="
 echo "==================================="
 cd RPi.GPIO_BP/
 python setup.py install
