@@ -18,12 +18,17 @@ wait
 wait
 sudo apt-get install virtualbox -y
 wait
-sudo apt install vagrant git espeak vlc -y
+sudo apt install vagrant git espeak -y
 wait
 sudo apt upgrade -y
 wait
 ./octomeow.sh box 
 wait
+echo "================================================================"
+echo "================================================================"
+echo "= Get yourself a coffe while we are downloading all the assets ="
+echo "================================================================"
+echo "================================================================"
 ./octomeow.sh assets #download all the assets 
 espeak -a 200 “The script has finished running” # notify when it is finish
 echo "=================================================="
