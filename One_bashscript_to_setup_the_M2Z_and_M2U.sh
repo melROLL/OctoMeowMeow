@@ -2,7 +2,11 @@
 # thisis a script i want to run on the banana pi after i have installed OctoMeowMeow
 #One_bashscript_to_setup_the_M2Z_and_M2U
 
-##downloading everything that is needed
+#!/bin/bash
+# One bashscript to rule them all
+
+
+#downloading everything that is needed
 echo "updating and installing"
 cd
 sudo apt-get update 
@@ -47,11 +51,17 @@ sudo apt-get install python3-venv -y
 wait
 sudo apt upgrade -y
 wait
+echo "==================================="
+echo "==================================="
 echo "everything is updated and installed"
-
-## installing
+echo "==================================="
+echo "==================================="
 #openocd
-echo "installing openocd"
+echo "==================================="
+echo "==================================="
+echo "=      installing openocd         ="
+echo "==================================="
+echo "==================================="
 cd
 #cd openocd-code/
 cd openocd/
@@ -63,24 +73,41 @@ Make
 wait
 sudo make install
 wait
+echo "==================================="
+echo "==================================="
+echo "=      openocd is installed       ="
+echo "==================================="
+echo "==================================="
 
 #GPIO
+echo "==================================="
+echo "==================================="
 echo "installing GPIO libraries"
+echo "==================================="
+echo "==================================="
 cd
+echo "==================================="
 echo "installing RPi.GPIO_BP"
+echo "==================================="
 cd RPi.GPIO_BP/
 python setup.py install
 wait
 sudo python setup.py install
 wait
 cd
-echo "installing WiringBP"
+echo "==================================="
+echo "=     installing WiringBP         ="
+echo "==================================="
 cd WiringBP/
 sudo chmod +x ./build
 wait
 sudo ./build
 wait
-echo "the gpio libraries are installed"
+echo "==================================="
+echo "==================================="
+echo "= the gpio libraries are installed="
+echo "==================================="
+echo "==================================="
 cd
 
 #other
@@ -88,4 +115,8 @@ sudo adduser pi audio
 
 #the end
 wait
-echo "finished runing"
+echo "==================="
+echo "==================="
+echo "= finished runing ="
+echo "==================="
+echo "==================="
