@@ -2,17 +2,18 @@
 # thisis a script i want to run on the banana pi after i have installed OctoMeowMeow
 #One_bashscript_to_setup_the_M2Z_and_M2U
 
-#!/bin/bash
-# One bashscript to rule them all
-
-
 #downloading everything that is needed
-echo "updating and installing"
+echo "============"
+echo "= updating ="
+echo "============"
 cd
 sudo apt-get update 
 wait
 sudo apt update 
 wait
+echo "=============="
+echo "= installing ="
+echo "=============="
 sudo apt install git -y
 wait
 echo "==================================="
