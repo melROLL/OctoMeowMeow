@@ -15,6 +15,28 @@ sudo apt update
 wait
 sudo apt install git -y
 wait
+echo "==================================="
+echo "=     installing octoprint        ="
+echo "==================================="
+su -
+wget https://raw.githubusercontent.com/Nebari-xx/octoprint_installer/master/octoprint_install.sh
+wait
+chmod +x octoprint_install.sh
+./octoprint_install.sh
+wait
+echo "==================================="
+echo "=     installing Klipper          ="
+echo "==================================="
+cd
+git clone https://github.com/th33xitus/kiauh.git
+wait
+./kiauh/kiauh.sh
+wait
+cd
+wait 
+echo "==================================="
+echo "=        cloning somme git        ="
+echo "==================================="
 git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapro
 wait
 #git clone https://git.code.sf.net/p/openocd/codeopenocd-code 
@@ -53,7 +75,7 @@ sudo apt upgrade -y
 wait
 echo "======================================="
 echo "======================================="
-echo "= everything is updated and installed ="
+echo "=  everything is updated and cloned   ="
 echo "======================================="
 echo "======================================="
 #openocd
